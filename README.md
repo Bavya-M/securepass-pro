@@ -1,409 +1,509 @@
-🛡️ AegisX – AI Powered Cloud Security & Threat Intelligence Platform
+🔐 SecurePass Pro – Intelligent Password Generator with Entropy Analysis & Security Insights
 
-Monitor • Detect • Analyze • Protect
+Generate • Analyze • Secure
 
-AegisX is a modern, enterprise-grade cloud security monitoring and threat intelligence platform designed to help organizations detect, analyze, and respond to cybersecurity threats in real time. The platform collects security events from cloud applications, identifies suspicious activities using rule-based detection and AI-assisted analysis, and provides an intuitive dashboard for monitoring security posture and managing incidents.
+SecurePass Pro is a production-grade password generator built with React, Vite, and Ant Design. It uses the Web Crypto API to generate cryptographically secure passwords while providing real-time strength analysis, entropy calculation, customizable security options, and an accessibility-first user experience.
 
-This project is built as a professional portfolio application to demonstrate expertise in Cloud Computing, Cybersecurity, Full-Stack Development, REST API Design, AI Integration, and DevOps.
+This project was developed as a portfolio application to demonstrate expertise in modern frontend development, secure browser APIs, UI/UX design, and cybersecurity best practices.
+---
 
-⸻
+✨ Key Features
 
-🚀 Key Features
+🔑 Password Generation
 
-🔐 Authentication & Security
+Generate secure passwords with complete control over password composition.
 
-* Secure User Registration & Login
-* JWT Authentication
-* Refresh Token Support
-* BCrypt Password Encryption
-* Email Verification
-* Forgot Password
-* Role-Based Access Control (RBAC)
-* Admin, Security Analyst, and User Roles
+ Supported Options
 
-⸻
+• Adjustable password length (8–64 characters)
+• Include uppercase letters (A–Z)
+• Include lowercase letters (a–z)
+• Include numbers (0–9)
+• Include special symbols
+• Exclude visually similar characters
+• Prevent repeated characters
+• Regenerate passwords instantly
+• Keyboard shortcut support
 
-📊 Security Operations Dashboard
+ Security
 
-Interactive dashboard displaying:
+• Cryptographically secure random generation
+• Uses `crypto.getRandomValues()`
+• No use of `Math.random()`
+• Passwords are generated entirely within the browser
+• No server communication
 
-* Overall Security Score
-* Active Users
-* Login Activity
-* Failed Login Attempts
-* Open Security Incidents
-* Threat Distribution
-* Attack Timeline
-* Recent Security Events
-* AI Threat Summary
+---
 
-⸻
+📊 Password Analysis
 
-📜 Security Log Management
+Every generated password is analyzed instantly.
 
-Collect and manage:
+ Analysis Includes:
 
-* User Login Logs
-* Failed Authentication Attempts
-* API Request Logs
-* User Activity Logs
-* Audit Logs
-* System Events
+• Password strength score
+• Entropy calculation
+• Character diversity
+• Length analysis
+• Security recommendations
+
+ Strength Levels:
+
+| Score | Rating |
+|--------|---------|
+| 0–20 | Weak |
+| 21–40 | Fair |
+| 41–60 | Good |
+| 61–80 | Strong |
+| 81–100 | Very Strong |
+
+---
+
+📋 Password History:
+
+SecurePass Pro stores recently generated passwords locally for convenience.
 
 Features include:
 
-* Search
-* Filtering
-* Pagination
-* Export
+• Last 10 generated passwords
+• One-click copy
+• Clear history option
+• Local-only storage
+• Never uploaded online
 
-⸻
+---
 
-🚨 Threat Detection Engine
+🎨 User Experience:
 
-Automatically detects:
+Designed for speed, accessibility, and usability.
 
-* Brute Force Attacks
-* Multiple Failed Login Attempts
-* Suspicious IP Address Changes
-* Impossible Travel Logins
-* SQL Injection Patterns
-* Cross-Site Scripting (XSS) Attempts
-* Unauthorized API Requests
-* Privilege Escalation Attempts
+Features include:
 
-Each detected event is classified based on severity:
+• Responsive layout:
+• Dark mode
+• Light mode
+• Smooth animations
+• Toast notifications
+• Instant password regeneration
+• Copy to clipboard
+• Local preference persistence
 
-* Low
-* Medium
-* High
-* Critical
+---
 
-⸻
+🔒 Security First:
 
-🤖 AI Threat Intelligence
+Security is the primary objective of SecurePass Pro.
 
-AI-powered analysis provides:
+ Security Principles
 
-* Threat Summary
-* Severity Classification
-* Risk Score
-* Recommended Mitigation
-* Security Insights
-* Incident Explanation
+• Browser-side password generation
+• No backend processing
+• No password transmission
+• No analytics on generated passwords
+• Uses secure browser APIs
+• Local Storage only for user preferences and history
 
-Example:
+---
 
-Threat: Multiple failed login attempts detected.
+🚀 Key Highlights:
 
-AI Analysis:
+• Cryptographically secure password generation
+• Real-time password strength meter
+• Entropy calculation
+• Modern Ant Design interface
+• Responsive on desktop, tablet, and mobile
+• Accessibility-first implementation
+• Dark and light themes
+• Keyboard-friendly controls
+• Local preference persistence
 
-This behavior resembles a brute-force attack. The account should be temporarily locked, the source IP should be investigated, and Multi-Factor Authentication should be enabled.
+---
 
-⸻
+🛠 Technology Stack:
 
-📂 Incident Management
+Frontend:
 
-Security analysts can:
+• React
+• Vite
+• JavaScript (ES6+)
+  
+ UI Framework:
+• Ant Design
+• Ant Design Icons
 
-* Create Incidents
-* Assign Analysts
-* Update Status
-* Add Investigation Notes
-* Track Incident Timeline
-* Close Incidents
-* View Incident History
+ Styling:
 
-Incident Status:
+• CSS Modules
+• CSS Variables
 
-* Open
-* Investigating
-* Resolved
-* Closed
+Browser APIs:
 
-⸻
+• Web Crypto API
+• Clipboard API
+• Local Storage API
+• Match Media API
 
-📧 Notification System
+Development Tools:
 
-Automatic notifications for:
+• ESLint
+• Prettier
+• Git
+• GitHub
 
-* High-Risk Logins
-* Account Lock Events
-* Security Incidents
-* Password Changes
-* Administrator Alerts
+ Deployment:
 
-Notifications are delivered through:
+• Vercel
 
-* Email
-* In-App Alerts
+---
 
-⸻
+📂 Project Structure:
 
-📄 Reports
-
-Generate professional reports in:
-
-* PDF
-* CSV
-
-Available reports:
-
-* Daily Security Report
-* Weekly Security Report
-* Monthly Security Report
-* Incident Report
-* Threat Summary Report
-
-⸻
-
-🏗️ System Architecture
-
-                   +----------------------+
-                   |      React UI        |
-                   +----------+-----------+
-                              |
-                        REST API (HTTPS)
-                              |
-                   +----------+-----------+
-                   | Spring Boot Backend  |
-                   +----------+-----------+
-                              |
-       +-----------+----------+-----------+-----------+
-       |           |                      |           |
- PostgreSQL   Threat Engine        AI Analysis   Email Service
-       |                                              |
- Security Logs                               Email Notifications
-
-⸻
-
-⚙️ Technology Stack
-
-Frontend
-
-* React
-* TypeScript
-* Vite
-* Tailwind CSS
-* shadcn/ui
-* React Router
-* Framer Motion
-* Recharts
-
-⸻
-
-Backend
-
-* Java 21
-* Spring Boot 3.5
-* Spring Security
-* Spring Data JPA
-* Spring Validation
-* Spring Mail
-* Lombok
-* MapStruct
-
-⸻
-
-Database
-
-* PostgreSQL
-
-⸻
-
-Authentication
-
-* JWT
-* Refresh Tokens
-* BCrypt
-
-⸻
-
-AI Integration
-
-* OpenAI API (or compatible LLM)
-* AI-based Threat Analysis
-* Security Recommendations
-
-⸻
-
-Cloud & DevOps
-
-* Docker
-* Docker Compose
-* AWS EC2
-* AWS S3 (Optional)
-* GitHub Actions
-* Nginx
-
-⸻
-
-API Documentation
-
-* Swagger / OpenAPI
-
-⸻
-
-📁 Project Structure
-
-AegisX/
+```text
+SecurePass-Pro/
 │
-├── frontend/
-│   ├── src/
-│   ├── public/
-│   └── package.json
+├── public/
 │
-├── backend/
-│   ├── src/
-│   ├── pom.xml
-│   └── Dockerfile
+├── src/
+│   │
+│   ├── assets/
+│   │
+│   ├── components/
+│   │   ├── Header/
+│   │   ├── Footer/
+│   │   ├── PasswordCard/
+│   │   ├── StrengthMeter/
+│   │   ├── SettingsPanel/
+│   │   ├── PasswordHistory/
+│   │   └── ThemeToggle/
+│   │
+│   ├── hooks/
+│   │   └── usePassword.js
+│   │
+│   ├── utils/
+│   │   ├── passwordGenerator.js
+│   │   ├── entropy.js
+│   │   ├── strengthCalculator.js
+│   │   └── clipboard.js
+│   │
+│   ├── constants/
+│   │
+│   ├── styles/
+│   │
+│   ├── App.jsx
+│   └── main.jsx
 │
-├── database/
-│   ├── schema.sql
-│   └── seed.sql
-│
-├── docker/
-│   └── docker-compose.yml
-│
-├── docs/
-│   ├── architecture/
-│   ├── api/
-│   └── screenshots/
-│
+├── package.json
+├── vite.config.js
 ├── README.md
 └── LICENSE
+```
 
-⸻
+---
 
-🗄️ Database Modules
+⚙️ Installation:
 
-* Roles
-* Users
-* Refresh Tokens
-* Security Logs
-* Threat Rules
-* Threat Analysis
-* Incidents
-* Incident Comments
-* Notifications
-* Reports
-* Audit Logs
+Clone the repository
 
-⸻
+```bash
+git clone https://github.com/yourusername/SecurePass-Pro.git
+```
 
-👥 User Roles
+Navigate into the project
 
-👑 Admin
+```bash
+cd SecurePass-Pro
+```
 
-* Manage Users
-* Configure System
-* View All Logs
-* Assign Roles
-* Generate Reports
+Install dependencies
 
-🛡️ Security Analyst
+```bash
+npm install
+```
 
-* Investigate Incidents
-* Analyze Threats
-* View Logs
-* Update Incident Status
+Start development server
 
-👤 User
+```bash
+npm run dev
+```
 
-* Login
-* View Personal Activity
-* Manage Profile
-* Receive Security Alerts
+Build production bundle
 
-⸻
+```bash
+npm run build
+```
 
-🔄 Application Workflow
+Preview production build
 
-User Login
-      │
-      ▼
-Authentication
-      │
-      ▼
-Security Log Created
-      │
-      ▼
-Threat Detection Engine
-      │
-      ▼
-AI Threat Analysis
-      │
-      ▼
-Incident Created
-      │
-      ▼
-Dashboard Updated
-      │
-      ▼
-Email Notification Sent
-      │
-      ▼
-PDF Report Generated
+```bash
+npm run preview
+```
 
-⸻
+---
 
-🔒 Security Features
+📜 Available Scripts:
 
-* JWT Authentication
-* Role-Based Authorization
-* Password Encryption
-* Input Validation
-* Global Exception Handling
-* Secure REST APIs
-* Audit Logging
-* Security Event Monitoring
+| Command | Description |
+|----------|-------------|
+| `npm install` | Install project dependencies |
+| `npm run dev` | Start development server |
+| `npm run build` | Create production build |
+| `npm run preview` | Preview production build locally |
+| `npm run lint` | Run ESLint |
+| `npm run format` | Format code using Prettier |
+| `npm run test` | Run test suite (if configured) |
 
-⸻
+---
 
-📈 Future Enhancements
+🚀 Usage:
 
-* Multi-Factor Authentication (MFA)
-* WebSocket Real-Time Alerts
-* SIEM Integration
-* AWS CloudWatch Integration
-* Kubernetes Deployment
-* Mobile Application
-* Threat Intelligence Feed Integration
-* Machine Learning Anomaly Detection
+1. Choose the desired password length.
+2. Select the character types to include.
+3. Enable optional security settings.
+4. Generate a password.
+5. Review the strength score and entropy.
+6. Copy the password to the clipboard.
+7. Generate another password if needed.
 
-⸻
+---
 
-🎯 Learning Outcomes
+🧠 Password Generation Algorithm:
 
-This project demonstrates practical knowledge of:
+The password generator follows these steps:
 
-* Cloud Computing
-* Cybersecurity
-* Spring Boot
-* React
-* REST API Development
-* PostgreSQL
-* Docker
-* JWT Authentication
-* AI Integration
-* DevOps
-* Secure Software Architecture
-* Enterprise Application Development
+1. Read user preferences.
+2. Build a valid character pool.
+3. Generate secure random values using the Web Crypto API.
+4. Map random values to characters.
+5. Validate password constraints.
+6. Calculate entropy.
+7. Calculate strength score.
+8. Display password and analysis.
 
-⸻
+---
 
-📜 License
+🔒 Security Architecture
 
-This project is developed for educational, research, and portfolio purposes.
+ Randomness:
 
-⸻
+SecurePass Pro uses:
+
+```
+crypto.getRandomValues()
+```
+
+instead of:
+
+```
+Math.random()
+```
+
+This ensures passwords are suitable for security-sensitive applications.
+
+---
+
+Local Processing:
+
+All password generation occurs entirely within the browser.
+
+No passwords are:
+
+• Uploaded
+• Logged
+• Stored remotely
+• Shared with third-party services
+
+---
+
+Local Storage:
+
+Only the following are stored locally:
+
+• Theme preference
+• Password generation preferences
+• Password history (optional)
+
+Passwords never leave the user's device.
+
+---
+
+♿ Accessibility:
+
+SecurePass Pro is built with accessibility in mind and follows modern WCAG recommendations.
+
+Accessibility Features:
+
+• Full keyboard navigation
+• Screen reader compatibility
+• Semantic HTML elements
+• Proper ARIA labels
+• Focus indicators
+• High contrast support
+• Responsive typography
+• Accessible form controls
+• Keyboard shortcuts
+• Logical tab order
+• Color-independent status indicators
+
+---
+
+📈 Performance:
+
+The application is optimized for speed and responsiveness.
+
+Optimizations:
+
+• Vite fast bundling
+• Lazy rendering where applicable
+• Lightweight component architecture
+• Efficient state management
+• Memoized calculations
+• Optimized password generation
+• Minimal bundle size
+
+---
+
+🗺️ Project Roadmap:
+
+Version 1.0 ✅
+
+• Secure password generation
+• Password strength meter
+• Entropy calculation
+• Copy to clipboard
+• Password history
+• Theme switching
+• Local storage
+
+---
+
+Version 1.1:
+
+• Password policy presets
+• Improved accessibility
+• Custom symbol sets
+• Password expiration reminders
+
+---
+
+Version 1.2:
+
+• Passphrase generator
+• Password templates
+• Import and export history
+• Advanced entropy visualization
+
+---
+
+Version 2.0:
+
+• Have I Been Pwned integration
+• Password breach detection
+• PWA support
+• Offline functionality
+• Browser extension
+• Electron desktop application
+
+---
+
+Future Enhancements:
+
+• Multi-language support
+• Cloud synchronization
+• Team password policies
+• Password sharing (encrypted) 
+•QR code export
+• Password statistics dashboard
+• Custom security profiles
+
+---
+
+🧪 Testing:
+
+Recommended testing includes:
+
+Unit Testing:
+
+• Password generation
+• Entropy calculation
+• Strength evaluation
+
+Integration Testing:
+
+• Clipboard functionality
+• Local storage
+• Theme persistence
+
+Accessibility Testing:
+
+• Keyboard navigation
+• Screen readers
+• Focus management
+• Contrast validation
+
+Browser Testing:
+
+• Chrome
+• Firefox
+• Edge
+• Safari
+
+---
+
+🤝 Contributing:
+
+Contributions are welcome.
+
+Getting Started
+
+1. Fork the repository.
+2. Create a feature branch.
+
+```bash
+git checkout -b feature/feature-name
+```
+
+3. Commit your changes.
+
+```bash
+git commit -m "Add feature"
+```
+
+4. Push to GitHub.
+
+```bash
+git push origin feature/feature-name
+```
+
+5. Open a Pull Request.
+
+---
+
+Coding Standards:
+
+Please follow the project's coding conventions:
+
+• Use meaningful component names.
+• Write reusable code.
+• Follow ESLint rules.
+• Format code with Prettier.
+• Keep components modular.
+• Write descriptive commit messages.
+
+---
+
+📄 License:
+
+This project is licensed under the **MIT License**.
+
+See the `LICENSE` file for more information.
+
+---
 
 👨‍💻 Author
 
 Bavya M
-
 Department: B.E. Computer Science and Engineering
 
-Project: AegisX – AI Powered Cloud Security & Threat Intelligence Platform
+Project: Intelligent Password Generator with Entropy Analysis & Security Insights
 
-“Building secure cloud applications through modern software engineering and cybersecurity practices.”
+"Building innovative software through modern engineering principles and best development practices."
