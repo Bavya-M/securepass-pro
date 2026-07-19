@@ -15,33 +15,21 @@ Generate secure passwords with complete control over password composition.
  Supported Options
 
 • Adjustable password length (8–64 characters)
-
 • Include uppercase letters (A–Z)
-
 • Include lowercase letters (a–z)
-
 • Include numbers (0–9)
-
 • Include special symbols
-
 • Exclude visually similar characters
-
 • Prevent repeated characters
-
 • Regenerate passwords instantly
-
 • Keyboard shortcut support
 
  Security:
 
 • Cryptographically secure random generation
-
 • Uses `crypto.getRandomValues()`
-
 • No use of `Math.random()`
-
 • Passwords are generated entirely within the browser
-
 • No server communication
 
 ---
