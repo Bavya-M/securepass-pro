@@ -35,9 +35,13 @@ Generate secure passwords with complete control over password composition.
  Security:
 
 • Cryptographically secure random generation
+
 • Uses `crypto.getRandomValues()`
+
 • No use of `Math.random()`
+
 • Passwords are generated entirely within the browser
+
 • No server communication
 
 ---
