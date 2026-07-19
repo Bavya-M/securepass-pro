@@ -4,7 +4,6 @@ Generate • Analyze • Secure
 
 SecurePass Pro is a production-grade password generator built with React, Vite, and Ant Design. It uses the Web Crypto API to generate cryptographically secure passwords while providing real-time strength analysis, entropy calculation, customizable security options, and an accessibility-first user experience.
 
-Built as a portfolio project showcasing modern frontend development, secure browser APIs, and cybersecurity-focused application design.
 ---
 
 ✨ Key Features
@@ -16,16 +15,24 @@ Generate secure passwords with complete control over password composition.
  Supported Options
 
 • Adjustable password length (8–64 characters)
+
 • Include uppercase letters (A–Z)
+
 • Include lowercase letters (a–z)
+
 • Include numbers (0–9)
+
 • Include special symbols
+
 • Exclude visually similar characters
+
 • Prevent repeated characters
+
 • Regenerate passwords instantly
+
 • Keyboard shortcut support
 
- Security
+ Security:
 
 • Cryptographically secure random generation
 • Uses `crypto.getRandomValues()`
