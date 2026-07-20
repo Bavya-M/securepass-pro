@@ -204,7 +204,7 @@ SecurePass-Pro/
 Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/SecurePass-Pro.git
+https://github.com/yourusername/SecurePass-Pro.git
 ```
 
 Navigate into the project
