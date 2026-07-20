@@ -501,6 +501,7 @@ See the `LICENSE` file for more information.
 👨‍💻 Author
 
 Bavya M
+
 Department: B.E. Computer Science and Engineering
 
 Project: Intelligent Password Generator with Entropy Analysis & Security Insights
