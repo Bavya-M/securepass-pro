@@ -1,0 +1,38 @@
+.segmentedControl {
+  display: inline-flex;
+  background-color: var(--bg-app);
+  border: 1px solid var(--border-color);
+  padding: 2px;
+  border-radius: var(--radius-md);
+  gap: 2px;
+  transition: all var(--transition-normal);
+}
+
+.segment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  color: var(--color-text-secondary);
+  width: 28px;
+  height: 28px;
+  border-radius: calc(var(--radius-md) - 2px);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.segment:hover {
+  color: var(--color-text);
+  background-color: var(--border-color);
+}
+
+.segment.active {
+  background-color: var(--bg-card);
+  color: var(--color-primary);
+  box-shadow: var(--shadow-sm);
+}
+
+.segment.active:hover {
+  background-color: var(--bg-card);
+}

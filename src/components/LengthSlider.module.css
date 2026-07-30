@@ -1,0 +1,58 @@
+.sliderContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.valueDisplay {
+  display: flex;
+  align-items: center;
+}
+
+.numberInput {
+  width: 48px;
+  height: 28px;
+  text-align: center;
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-app);
+  border-radius: var(--radius-sm);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--color-text);
+  outline: none;
+  transition: all var(--transition-fast);
+}
+
+.numberInput:focus {
+  border-color: var(--color-primary);
+  background-color: var(--bg-card);
+}
+
+/* Hide spin buttons in webkit browsers */
+.numberInput::-webkit-outer-spin-button,
+.numberInput::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Hide spin buttons in Firefox */
+.numberInput[type=number] {
+  -moz-appearance: textfield;
+}
+
+.sliderWrapper {
+  padding: 0 4px;
+}

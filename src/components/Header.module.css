@@ -1,0 +1,54 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-color);
+  transition: border-color var(--transition-normal);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.logoWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background-color: var(--color-primary);
+  color: #ffffff;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.logo {
+  flex-shrink: 0;
+}
+
+.titleWrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--color-text);
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+
+.badge {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  background-color: var(--border-color);
+  color: var(--color-text-secondary);
+  padding: 0.125rem 0.375rem;
+  border-radius: 4px;
+  line-height: 1;
+}

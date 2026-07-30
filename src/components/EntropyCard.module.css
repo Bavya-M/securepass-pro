@@ -1,0 +1,76 @@
+.metricCard {
+  flex: 1;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 1rem 1.25rem;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  transition: all var(--transition-normal);
+}
+
+.metricCard:hover {
+  border-color: var(--color-text-secondary);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.titleWrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  color: var(--color-text-secondary);
+}
+
+.icon {
+  flex-shrink: 0;
+}
+
+.title {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.infoIcon {
+  color: var(--color-text-secondary);
+  cursor: help;
+  transition: color var(--transition-fast);
+}
+
+.infoIcon:hover {
+  color: var(--color-text);
+}
+
+.valueWrapper {
+  display: flex;
+  align-items: baseline;
+  gap: 0.25rem;
+}
+
+.value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-text);
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.unit {
+  font-size: 0.75rem;
+  color: var(--color-text-secondary);
+  font-weight: 500;
+}
+
+.tooltipContent {
+  font-size: 0.75rem;
+  line-height: 1.4;
+  max-width: 220px;
+}

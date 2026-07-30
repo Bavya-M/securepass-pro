@@ -1,0 +1,87 @@
+.historyItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-normal);
+  gap: 1rem;
+}
+
+.historyItem:hover {
+  border-color: var(--color-text-secondary);
+}
+
+.passwordWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+  overflow: hidden;
+}
+
+.passwordText {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-text);
+  letter-spacing: 0.05em;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.time {
+  font-size: 0.75rem;
+  color: var(--color-text-secondary);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.iconButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  background: transparent;
+  border: none;
+  border-radius: var(--radius-sm);
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.iconButton:hover {
+  background-color: var(--bg-app);
+  color: var(--color-text);
+}
+
+.copied {
+  color: var(--color-success) !important;
+  background-color: rgba(22, 163, 74, 0.08) !important;
+}
+
+.successIcon {
+  animation: popIn 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.delete:hover {
+  color: var(--color-danger) !important;
+  background-color: rgba(220, 38, 38, 0.08) !important;
+}
+
+@keyframes popIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

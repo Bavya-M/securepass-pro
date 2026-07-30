@@ -1,0 +1,51 @@
+.meterContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.label {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-text-secondary);
+}
+
+.statusLabel {
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: color var(--transition-fast);
+}
+
+.track {
+  display: flex;
+  gap: 4px;
+  width: 100%;
+  height: 6px;
+}
+
+.segment {
+  flex-grow: 1;
+  height: 100%;
+  background-color: var(--border-color);
+  border-radius: 9999px;
+  transition: background-color var(--transition-normal);
+}
+
+.explanation {
+  font-size: 0.75rem;
+  color: var(--color-text-secondary);
+  line-height: 1.4;
+  margin-top: 0.25rem;
+  padding-left: 0.75rem;
+  border-left: 2px solid transparent;
+  transition: border-color var(--transition-normal);
+}

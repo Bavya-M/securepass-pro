@@ -1,0 +1,79 @@
+@import './variables.css';
+
+/* Focus outlines for accessibility */
+*:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* Custom CSS overrides for Ant Design Slider & Switch to maintain SaaS aesthetic */
+.ant-slider {
+  margin: 10px 0 !important;
+}
+
+.ant-slider .ant-slider-rail {
+  background-color: var(--border-color) !important;
+  height: 6px !important;
+}
+
+.ant-slider .ant-slider-track {
+  background-color: var(--color-primary) !important;
+  height: 6px !important;
+}
+
+.ant-slider .ant-slider-handle {
+  width: 16px !important;
+  height: 16px !important;
+  margin-top: -5px !important;
+  border: 2px solid var(--color-primary) !important;
+  background-color: var(--bg-card) !important;
+  box-shadow: var(--shadow-sm) !important;
+  transition: transform var(--transition-fast) !important;
+}
+
+.ant-slider .ant-slider-handle:hover,
+.ant-slider .ant-slider-handle:focus {
+  transform: scale(1.1);
+}
+
+.ant-slider .ant-slider-handle::after {
+  display: none !important;
+}
+
+/* Ant Switch Custom Styling */
+.ant-switch {
+  background-color: var(--border-color) !important;
+}
+
+.ant-switch.ant-switch-checked {
+  background-color: var(--color-primary) !important;
+}
+
+.ant-switch .ant-switch-inner {
+  color: var(--color-text-secondary) !important;
+}
+
+/* Container limits */
+.app-container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  gap: 2rem;
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Base interactive transitions */
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}

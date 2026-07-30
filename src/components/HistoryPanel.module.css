@@ -1,0 +1,87 @@
+.panelCard {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: border-color var(--transition-normal), background-color var(--transition-normal);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 1.5rem 1rem 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+  transition: border-color var(--transition-normal);
+}
+
+.titleWrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-text);
+}
+
+.icon {
+  color: var(--color-text-secondary);
+}
+
+.title {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+}
+
+.counter {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+}
+
+.clearButton {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  background: transparent;
+  border: 1px solid var(--border-color);
+  padding: 0.25rem 0.625rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.clearButton:hover {
+  background-color: rgba(220, 38, 38, 0.08);
+  border-color: var(--color-danger);
+  color: var(--color-danger);
+}
+
+.body {
+  padding: 1.5rem;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.emptyState {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  text-align: center;
+  font-size: 0.8125rem;
+  color: var(--color-text-secondary);
+  border: 1px dashed var(--border-color);
+  border-radius: var(--radius-md);
+}
